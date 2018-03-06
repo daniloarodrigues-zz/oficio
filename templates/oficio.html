@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block body %}
+    <h1>Ofícios</h1>
+    <a href="/novo" class="btn btn-group btn-primary">Novo</a>
+    <hr>
+    {%  for i in lista_oficios %}
+    <a href="/visualizar/{{ i.numero }}" class="btn btn-info"><h4><b>Nº {{ i.numero }}</b></h4></a>
+    {% endfor %}
+
+{% endblock %}

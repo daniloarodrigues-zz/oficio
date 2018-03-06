@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% block body %}
+    <!DOCTYPE html>
+<html>
+<head>
+    <!-- HTML 4 -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- HTML5 -->
+<meta charset="utf-8"/>
+<style>
+img {
+    width: 200px;
+    position: absolute;
+    top: 40px;
+}
+#header_content h1{
+    font-size: 14pt;
+    text-align: center;
+}
+p{
+    font-size: 12pt;
+}
+.data{
+    text-align: right;
+}
+#footer_content{
+    text-align: center;
+    font-size: 11pt;
+}
+.justificar{
+    text-align: justify;
+}
+.centralizar{
+    text-align: center;
+}
+#footer_content{
+    position: absolute;
+    bottom: 0px;
+    width: 1140px;
+}
+.centralizar{
+    bottom: 60px;
+    width: 1140px;
+    position:absolute;
+}
+</style>
+</head>
+
+<body>
+    <!-- Content for Static Frame 'header_frame' -->
+    <a class="btn btn-group btn-primary" href="/detalhes/{{ item.numero }}/pdf/">Baixar PDF</a>
+    <a class="btn btn-group btn-primary" href="/detalhes/{{ item.numero }}/">Editar</a>
+    <a class="btn btn-group btn-primary" href="/delete/{{ item.numero }}/">Deletar</a>
+    <a class="btn btn-group btn-primary" href="/oficio/">Voltar para a listagem</a>
+    <div id="imagem">
+        <img src="{{ item.orgao.logo.url }}"/>
+    </div>
+    <div id="header_content">
+        <h1>{{ item.orgao.nome }}<br>
+            {{ item.setor.nome }}<br>
+            {{ converter }}</h1>
+    </div>
+
+    <!-- Content for Static Frame 'footer_frame' -->
+    <div id="footer_content">
+        {{ item.setor.endereco }}<br>
+        E-Mail: {{ item.responsavel.email }}
+    </div>
+
+    <!-- HTML Content -->
+    <p class="data" id="data">{{ item.data.date }}</p>
+    <p id="numero">Ofício nº {{ item.numero|stringformat:".3d" }}/{{ item.data.year }}</p>
+    <p id="dadospara">Srº {{ item.para }}<br>
+    {{ item.cargo_para }}</p>
+    <p id="assunto">Assunto: {{ item.assunto }}</p>
+    {% autoescape on %}
+    <p class="justificar">{{ item.texto|linebreaksbr }}{{ BASE_DIR }}</p>
+    <p class="centralizar" id="assinatura"><b>{{ item.responsavel.nome }}</b><br>{{ item.cargo.nome }}</p>
+{% endautoescape %}
+</body>
+</html>
+{% endblock %}

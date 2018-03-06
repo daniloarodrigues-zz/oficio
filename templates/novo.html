@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block body %}
+<form action="" method="post" class="form-group">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn btn-group btn-primary" type="submit">Salvar</button>
+<a href="/oficio/">Voltar para a listagem</a>
+
+</form>
+{% endblock %}

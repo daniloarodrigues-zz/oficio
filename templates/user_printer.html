@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- HTML 4 -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- HTML5 -->
+<meta charset="utf-8"/>
+<style>
+    @page {
+        size: a4 portrait;
+        @frame header_frame {           /* Static Frame */
+            -pdf-frame-content: header_content;
+            left: 50pt; width: 512pt; top: 50pt; height: 100pt;
+        }
+        @frame content_frame {          /* Content Frame */
+            left: 60pt; width: 472pt; top: 390pt; height: 632pt;
+        }
+        @frame footer_frame {           /* Another static Frame */
+            -pdf-frame-content: footer_content;
+            left: 60pt; width: 472pt; top: 772pt; height: 40pt;
+        }
+        @frame imagem{
+            -pdf-frame-content: imagem;
+            left: 30pt; width: 512pt; top: 40pt; height: 100pt;
+        }
+        @frame assinatura{
+            -pdf-frame-content: assinatura;
+            left: 60pt; width: 472pt; top: 670pt; height: 40pt;
+        }
+        @frame data{
+            -pdf-frame-content: data;
+            left: 60pt; width: 472pt; top: 170pt; height: 40pt;
+        }
+        @frame numero{
+            -pdf-frame-content: numero;
+            left: 60pt; width: 472pt; top: 225pt; height: 40pt;
+        }
+        @frame dadospara{
+            -pdf-frame-content: dadospara;
+            left: 60pt; width: 472pt; top: 280pt; height: 40pt;
+        }
+        @frame assunto{
+            -pdf-frame-content: assunto;
+            left: 60pt; width: 472pt; top: 340pt; height: 40pt;
+    }
+        
+    }
+img {
+    width: 200px;
+    position: relative;
+}
+#header_content h1{
+    font-size: 14pt;
+    text-align: center;
+}
+p{
+    font-size: 12pt;
+}
+.data{
+    text-align: right;
+}
+#footer_content{
+    text-align: center;
+    font-size: 11pt;
+}
+.justificar{
+    text-align: justify;
+}
+.centralizar{
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+    <!-- Content for Static Frame 'header_frame' -->
+    <div id="imagem">
+        <img src="{{ dados.orgao.logo.url }}"/>
+    </div>
+    <div id="header_content">
+        <h1>{{ dados.orgao.nome }}<br>
+            {{ dados.setor.nome }}<br>
+            {{ converter }}</h1>
+    </div>
+
+    <!-- Content for Static Frame 'footer_frame' -->
+    <div id="footer_content">
+        {{ dados.setor.endereco }}<br>
+        E-Mail: {{ dados.responsavel.email }}
+    </div>
+
+    <!-- HTML Content -->
+    <p class="data" id="data">{{ dados.data.date }}</p>
+    <p id="numero">Ofício nº {{ dados.numero|stringformat:".3d" }}/2018</p>
+    <p id="dadospara">Srº {{ dados.para }}<br>
+    {{ dados.cargo_para }}</p>
+    <p id="assunto">Assunto: {{ dados.assunto }}</p>
+    {% autoescape on %}
+    <p class="justificar">{{ dados.texto|linebreaksbr }}{{ BASE_DIR }}</p>
+        <p class="centralizar" id="assinatura"><b>{{ dados.responsavel.nome }}</b><br>{{ dados.cargo.nome }}</p>
+
+{% endautoescape %}
+</body>
+</html>

@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block body %}
+<form action="" method="post" class="form-group">
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+<div class="fieldWrapper">
+    {{ form.orgao.errors }}
+    <label for="{{ form.orgao.id_for_label }}">Orgão:</label>
+    {{ form.orgao }}
+</div>
+<div class="fieldWrapper">
+    {{ form.numero.errors }}
+    <label for="{{ form.numero.id_for_label }}">Número do Ofício:</label>
+    {{ form.numero }}
+</div>
+<div class="fieldWrapper">
+    {{ form.data.errors }}
+    <label for="{{ form.data.id_for_label }}">Data:</label>
+    {{ form.data }}
+
+</div>
+<div class="fieldWrapper">
+    {{ form.responsavel.errors }}
+    <label for="{{ form.responsavel.id_for_label }}">Responsável:</label>
+    {{ form.responsavel }}
+</div>
+<div class="fieldWrapper">
+    {{ form.cargo.errors }}
+    <label for="{{ form.cargo.id_for_label }}">Cargo:</label>
+    {{ form.cargo }}
+</div>
+<div class="fieldWrapper">
+    {{ form.setor.errors }}
+    <label for="{{ form.setor.id_for_label }}">Setor:</label>
+    {{ form.setor }}
+</div>
+<div class="fieldWrapper">
+    {{ form.para.errors }}
+    <label for="{{ form.para.id_for_label }}">Para:</label>
+    {{ form.para }}
+</div>
+<div class="fieldWrapper">
+    {{ form.cargo_para.errors }}
+    <label for="{{ form.cargo_para.id_for_label }}">Cargo Para:</label>
+    {{ form.cargo_para }}
+</div>
+<div class="fieldWrapper">
+    {{ form.assunto.errors }}
+    <label for="{{ form.assunto.id_for_label }}">Assunto:</label>
+    {{ form.assunto }}
+</div>
+<div class="fieldWrapper">
+    {{ form.texto.errors }}
+    <label for="{{ form.texto.id_for_label }}">Texto:</label>
+    {{ form.texto }}
+</div>
+
+    <button class="btn btn-group btn-primary" type="submit">Atualizar</button>
+<a class="btn btn-group btn-primary" href="pdf/">Baixar PDF</a>
+<a class="btn btn-group btn-primary" href="/visualizar/{{ item.numero }}">Cancelar</a>
+</form>
+{% endblock %}
