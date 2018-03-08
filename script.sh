@@ -1,4 +1,4 @@
-RUN apt update -y;
+RUN apt update && apt upgrade -y;
 RUN apt-install vim python3 python pip virtualenv build-essential python3-dev python -y;
 
 mkdir /deploy;
