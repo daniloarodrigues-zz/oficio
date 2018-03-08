@@ -57,14 +57,14 @@ p{
     </div>
     <div id="header_content">
         <h1>{{ item.orgao.nome }}<br>
-            {{ item.setor.nome }}<br>
+            {{ item.responsavel.setor.nome }}<br>
             {{ converter }}</h1>
     </div>
 
     <!-- Content for Static Frame 'footer_frame' -->
     <div id="footer_content">
-        {{ item.setor.endereco }}<br>
-        E-Mail: {{ item.responsavel.email }}
+        {{ item.responsavel.setor.endereco }}<br>
+        E-Mail: {{ item.responsavel.usuario.email }}
     </div>
 
     <!-- HTML Content -->
@@ -75,7 +75,7 @@ p{
     <p id="assunto">Assunto: {{ item.assunto }}</p>
     {% autoescape on %}
     <p class="justificar">{{ item.texto|linebreaksbr }}{{ BASE_DIR }}</p>
-    <p class="centralizar" id="assinatura"><b>{{ item.responsavel.nome }}</b><br>{{ item.cargo.nome }}</p>
+    <p class="centralizar" id="assinatura"><b>{{ item.responsavel.usuario.get_full_name }}</b><br>{{ item.responsavel.cargo.nome }}</p>
 {% endautoescape %}
 </body>
 </html>

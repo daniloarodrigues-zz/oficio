@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 from oficio import views
 
@@ -27,5 +27,8 @@ urlpatterns = [
     path('delete/<int:numero>/', views.delete),
     path('visualizar/<int:numero>/', views.visualizar),
     path('novo/', views.novo),
+    path('', views.home),
     path('detalhes/<int:numero>/pdf/', views.render_pdf_view),
+    path('login/',views.do_login),
+    path('logout/',views.do_logout),
 ]   + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

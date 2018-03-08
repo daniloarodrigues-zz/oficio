@@ -1,22 +1,25 @@
 import os
 from django.conf import settings
+from django.contrib.auth import authenticate, login, logout, get_user
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.template import RequestContext
 from django.template.loader import get_template
 from xhtml2pdf import pisa
 
 from oficio.forms import FormOficio
 from oficio.mascaras import cnpj
-from oficio.models import Oficio
+from oficio.models import Oficio, Responsavel, Cargo
 
 
+@login_required
 def oficio(request):
-    lista_oficios = Oficio.objects.all().order_by('numero')
+    lista_oficios = Oficio.objects.filter(responsavel__usuario=request.user).order_by('numero')
     context = RequestContext(request)
     return render(request, 'oficio.html', {'lista_oficios': lista_oficios}, context)
 
-
+@login_required
 def detalhes(request, numero):
     item = get_object_or_404(Oficio, numero=numero)
     if request.method == "POST":
@@ -29,12 +32,14 @@ def detalhes(request, numero):
     context = RequestContext(request)
     return render(request, 'detalhes.html', {'form': form, 'item': item}, context)
 
-
+@login_required
 def novo(request):
     if request.method == "POST":
         form = FormOficio(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            item = form.save(commit=False)
+            item.responsavel = get_object_or_404(Responsavel, usuario=request.user)
+            item.save()
             return render(request, 'salvo.html', {})
     else:
         form = FormOficio()
@@ -68,10 +73,10 @@ def link_callback(uri, rel):
         )
     return path
 
-
+@login_required
 def render_pdf_view(request, numero):
     template_path = 'user_printer.html'
-    dados = get_object_or_404(Oficio, numero=numero)
+    dados = get_object_or_404(Oficio, numero=numero, responsavel__usuario=request.user)
     converter = cnpj(dados.orgao.cnpj)
     context = {'dados': dados, 'converter': converter}
     # Create a Django response object, and specify content_type as pdf
@@ -89,16 +94,41 @@ def render_pdf_view(request, numero):
         return HttpResponse('We had some errors <pre>' + html + '</pre>')
     return response
 
-
+@login_required
 def visualizar(request, numero):
-    item = get_object_or_404(Oficio, numero=numero)
+    item = get_object_or_404(Oficio, numero=numero, responsavel__usuario=request.user)
     converter = cnpj(item.orgao.cnpj)
     context = RequestContext(request)
     return render(request, 'visualizar.html', {'item': item, 'converter': converter}, context)
 
-
+@login_required
 def delete(request, numero):
-    item = get_object_or_404(Oficio, numero=numero)
+    item = get_object_or_404(Oficio, numero=numero, responsavel__usuario=request.user)
     item.delete()
     context = RequestContext(request)
     return render(request, 'deletar.html', {'item': item}, context)
+
+
+def do_login(request):
+    if not request.user.is_authenticated:
+        if request.method == "POST":
+            username = request.POST['username']
+            password = request.POST['password']
+            user = authenticate(request, username=username, password=password)
+            if user is not None:
+                login(request, user)
+                return redirect('/oficio/')
+    else:
+        return redirect('/oficio/')
+    return render(request,'login.html',{})
+
+def do_logout(request):
+    if request.user.is_authenticated:
+        logout(request)
+        return redirect('/login/')
+    else:
+        return redirect('/login/')
+
+
+def home(request):
+    return redirect('/login/')
