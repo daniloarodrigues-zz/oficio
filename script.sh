@@ -1,3 +1,4 @@
+#!/bin/bash
 apt update && apt upgrade -y
 apt-install vim python3 python pip virtualenv build-essential python3-dev python -y
 
