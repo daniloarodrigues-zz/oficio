@@ -1,6 +1,7 @@
 #!/bin/bash
 apt update && apt upgrade -y
-apt install vim python3 python pip-python virtualenv build-essential python3-dev python -y
+apt install vim python3 python virtualenv build-essential python3-dev python -y
+apt install python-pip -y
 
 mkdir /deploy
 mkdir /deploy/App
