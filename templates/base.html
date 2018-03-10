@@ -3,29 +3,22 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-<!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/styles/css/style.css">
 
-<!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="/static/styles/css/style.css">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!-- Bootstrap core CSS -->
     <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/docs/4.0/examples/starter-template/starter-template.css" rel="stylesheet">
 
 <title>Ofícios</title>
     {% endblock %}
 </head>
-<body class="container align-content-around">
+<body>
+
+
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <a class="navbar-brand" href="#">OFÍCIOS CMJG</a>
@@ -40,11 +33,14 @@
           <li class="nav-item active">
             <a class="nav-link" href="/novo">Novo <span class="sr-only">(current)</span></a>
           </li>
+          {% block menu %}
+          <!-- Bloco de menu -->
+
+          {% endblock %}
         </ul>
           <a class="btn btn-outline-danger my-2 my-sm-0 nav-link" href="/logout" >Sair</a>
       </div>
     </nav>
-
     <main role="main" class="container">
 
 {% block body %}

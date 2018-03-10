@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% block menu %}
 <li class="nav-item active">
     <a class="nav-link" href="/detalhes/{{ item.numero }}/pdf/">Baixar PDF <span class="sr-only">(current)</span></a>
 </li>
@@ -9,14 +9,19 @@
 <li class="nav-item active">
     <a class="nav-link" href="/delete/{{ item.numero }}/">Deletar <span class="sr-only">(current)</span></a>
 </li>
-
+{% endblock %}
 {% block body %}
 
 <style>
+#imagem{
+    align-content: center;
+}
 img {
     width: 200px;
-    position: absolute;
     top: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 #header_content h1{
     font-size: 14pt;
@@ -39,15 +44,9 @@ p{
     text-align: center;
 }
 #footer_content{
-    position: absolute;
     bottom: 0px;
-    width: 1140px;
 }
-.centralizar{
-    bottom: 60px;
-    width: 1140px;
-    position:absolute;
-}
+
 </style>
 </head>
 
@@ -64,10 +63,7 @@ p{
     </div>
 
     <!-- Content for Static Frame 'footer_frame' -->
-    <div id="footer_content">
-        {{ item.responsavel.setor.endereco }}<br>
-        E-Mail: {{ item.responsavel.usuario.email }}
-    </div>
+
 
     <!-- HTML Content -->
     <p class="data" id="data">{{ item.data.date }}</p>
@@ -77,7 +73,12 @@ p{
     <p id="assunto">Assunto: {{ item.assunto }}</p>
     {% autoescape on %}
     <p class="justificar">{{ item.texto|linebreaksbr }}{{ BASE_DIR }}</p>
-    <p class="centralizar" id="assinatura"><b>{{ item.responsavel.usuario.get_full_name }}</b><br>{{ item.responsavel.cargo.nome }}</p>
+    <p class="centralizar" id="assinatura"><b>{{ item.responsavel.usuario.get_full_name }}</b><br>{{ item.responsavel.cargo.nome }}
+    </p>
+        <p class="centralizar">
+        {{ item.responsavel.setor.endereco }}<br>
+        E-Mail: {{ item.responsavel.usuario.email }}
+        </p>
 {% endautoescape %}
 </body>
 </html>
