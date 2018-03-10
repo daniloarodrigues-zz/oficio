@@ -2,135 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="427cf377-c0e9-40d9-bdb2-ae887bc1e56c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/login.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Beta4/settings.py" afterPath="$PROJECT_DIR$/Beta4/settings.py" />
-      <change beforePath="$PROJECT_DIR$/Beta4/urls.py" afterPath="$PROJECT_DIR$/Beta4/urls.py" />
-      <change beforePath="$PROJECT_DIR$/media/brasao.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/oficio/forms.py" afterPath="$PROJECT_DIR$/oficio/forms.py" />
-      <change beforePath="$PROJECT_DIR$/oficio/models.py" afterPath="$PROJECT_DIR$/oficio/models.py" />
-      <change beforePath="$PROJECT_DIR$/oficio/views.py" afterPath="$PROJECT_DIR$/oficio/views.py" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/autocomplete.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/base.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/changelists.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/dashboard.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/fonts.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/forms.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/login.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/responsive.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/responsive_rtl.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/rtl.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/vendor/select2/LICENSE-SELECT2.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/vendor/select2/select2.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/vendor/select2/select2.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/widgets.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/fonts/LICENSE.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/fonts/README.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Bold-webfont.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Light-webfont.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Regular-webfont.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/README.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/calendar-icons.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/gis/move_vertex_off.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/gis/move_vertex_on.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-addlink.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-alert.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-calendar.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-changelink.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-clock.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-deletelink.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-no.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-unknown-alt.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-unknown.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-yes.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/inline-delete.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/search.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/selector-icons.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/sorting-icons.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/tooltag-add.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/img/tooltag-arrowright.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/SelectBox.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/SelectFilter2.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/actions.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/actions.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/admin/DateTimeShortcuts.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/admin/RelatedObjectLookups.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/autocomplete.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/calendar.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/cancel.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/change_form.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/collapse.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/collapse.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/core.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/inlines.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/inlines.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/jquery.init.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/popup_response.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/prepopulate.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/prepopulate.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/prepopulate_init.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/timeparse.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/urlify.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/jquery/LICENSE-JQUERY.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/LICENSE-SELECT2.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ar.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/az.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/bg.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ca.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/cs.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/da.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/de.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/el.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/en.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/es.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/et.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/eu.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/fa.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/fi.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/fr.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/gl.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/he.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/hi.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/hr.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/hu.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/id.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/is.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/it.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ja.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/km.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ko.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/lt.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/lv.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/mk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ms.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/nb.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/nl.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/pl.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/pt-BR.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/pt.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ro.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ru.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/sk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/sr-Cyrl.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/sr.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/sv.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/th.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/tr.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/uk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/vi.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/zh-CN.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/zh-TW.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/select2.full.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/select2.full.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/xregexp.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/xregexp.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/templates/novo.html" afterPath="$PROJECT_DIR$/templates/novo.html" />
-      <change beforePath="$PROJECT_DIR$/templates/user_printer.html" afterPath="$PROJECT_DIR$/templates/user_printer.html" />
-      <change beforePath="$PROJECT_DIR$/templates/visualizar.html" afterPath="$PROJECT_DIR$/templates/visualizar.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -147,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="45" column="29" lean-forward="false" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+            <state relative-caret-position="-406">
+              <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -167,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Beta4/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+            <state relative-caret-position="504">
+              <caret line="33" column="67" lean-forward="false" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
               <folding>
                 <element signature="e#629#661#0" expanded="true" />
               </folding>
@@ -192,7 +64,7 @@
       <file leaf-file-name="novo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/novo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
+            <state relative-caret-position="414">
               <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
@@ -222,7 +94,7 @@
       <file leaf-file-name="visualizar.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/visualizar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-792">
+            <state relative-caret-position="18">
               <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
@@ -285,7 +157,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-128" />
     <option name="y" value="519" />
     <option name="width" value="1221" />
@@ -307,7 +179,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -329,17 +200,13 @@
             <path>
               <item name="Beta4" type="b2602c69:ProjectViewProjectNode" />
               <item name="Beta4" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Beta4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Beta4" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -445,21 +312,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="519" width="1366" height="741" extended-state="6" />
+    <frame x="-128" y="519" width="1366" height="741" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.52122986" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21435897" sideWeight="0.49375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.328594" sideWeight="0.47877014" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21435897" sideWeight="0.49375" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.328594" sideWeight="0.47877014" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17569546" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.49791667" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.49791667" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -514,7 +382,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="97" lean-forward="false" selection-start-line="6" selection-start-column="97" selection-end-line="6" selection-end-column="97" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -538,7 +405,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="9" column="59" lean-forward="false" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -554,9 +420,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="33" column="15" lean-forward="false" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -571,9 +434,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1296">
           <caret line="81" column="55" lean-forward="false" selection-start-line="81" selection-start-column="55" selection-end-line="81" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -598,7 +458,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="97" lean-forward="false" selection-start-line="6" selection-start-column="97" selection-end-line="6" selection-end-column="97" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -630,9 +489,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="33" column="15" lean-forward="false" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -664,7 +520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="97" lean-forward="false" selection-start-line="6" selection-start-column="97" selection-end-line="6" selection-end-column="97" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -688,9 +543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
           <caret line="53" column="27" lean-forward="true" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -706,9 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="33" column="15" lean-forward="false" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -716,9 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="882">
           <caret line="56" column="19" lean-forward="false" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -743,7 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="9" column="59" lean-forward="false" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -751,7 +596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="97" lean-forward="true" selection-start-line="6" selection-start-column="97" selection-end-line="6" selection-end-column="97" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -783,7 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -791,7 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -799,7 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -807,9 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="666">
           <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -817,7 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="9" column="44" lean-forward="false" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -839,7 +676,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/novo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
+        <state relative-caret-position="414">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
@@ -849,40 +686,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="133" column="28" lean-forward="false" selection-start-line="133" selection-start-column="28" selection-end-line="133" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/login/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2556">
-          <caret line="142" column="11" lean-forward="false" selection-start-line="142" selection-start-column="4" selection-end-line="142" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/login/less/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/static/login/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/static/login/less/style.less" />
     <entry file="file://$PROJECT_DIR$/templates/visualizar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-792">
+        <state relative-caret-position="18">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="45" column="29" lean-forward="false" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -895,6 +707,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Beta4/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="33" column="67" lean-forward="false" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
+          <folding>
+            <element signature="e#629#661#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Beta4/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -903,13 +725,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Beta4/urls.py">
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding>
-            <element signature="e#629#661#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-406">
+          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
