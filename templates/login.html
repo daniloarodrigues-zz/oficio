@@ -18,11 +18,11 @@
   <div class="wrapper">
 	<div class="container">
 		<h1>Bem-Vindo</h1>
-        <form action="/oficio" class="form-signin" method="post">
+        <form action="" class="form-signin" method="post" id="formulario" >
             {% csrf_token %}
-			<input type="text" placeholder="Usuário" name="username">
-			<input type="password" placeholder="Senha" name="password">
-			<button type="submit" id="login-button">Acessar</button>
+			<input type="text" placeholder="Usuário" name="username" />
+			<input type="password" placeholder="Senha" name="password" />
+			<input type="submit" id="login-button" class="btn btn-primary" value="Acessar" />
 		</form>
 	</div>
 
