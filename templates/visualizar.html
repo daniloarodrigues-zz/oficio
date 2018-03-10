@@ -1,17 +1,22 @@
 {% extends 'base.html' %}
+
+<li class="nav-item active">
+    <a class="nav-link" href="/detalhes/{{ item.numero }}/pdf/">Baixar PDF <span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item active">
+    <a class="nav-link" href="/detalhes/{{ item.numero }}/">Editar <span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item active">
+    <a class="nav-link" href="/delete/{{ item.numero }}/">Deletar <span class="sr-only">(current)</span></a>
+</li>
+
 {% block body %}
-    <!DOCTYPE html>
-<html>
-<head>
-    <!-- HTML 4 -->
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<!-- HTML5 -->
-<meta charset="utf-8"/>
+
 <style>
 img {
     width: 200px;
     position: absolute;
-    top: 40px;
+    top: 56px;
 }
 #header_content h1{
     font-size: 14pt;
@@ -46,12 +51,9 @@ p{
 </style>
 </head>
 
-<body>
+
     <!-- Content for Static Frame 'header_frame' -->
-    <a class="btn btn-group btn-primary" href="/detalhes/{{ item.numero }}/pdf/">Baixar PDF</a>
-    <a class="btn btn-group btn-primary" href="/detalhes/{{ item.numero }}/">Editar</a>
-    <a class="btn btn-group btn-primary" href="/delete/{{ item.numero }}/">Deletar</a>
-    <a class="btn btn-group btn-primary" href="/oficio/">Voltar para a listagem</a>
+
     <div id="imagem">
         <img src="{{ item.orgao.logo.url }}"/>
     </div>

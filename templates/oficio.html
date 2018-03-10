@@ -1,10 +1,22 @@
 {% extends 'base.html' %}
 {% block body %}
-    <h1>Ofícios</h1>
-    <a href="/novo" class="btn btn-group btn-primary">Novo</a>
-    <hr>
+
+
+        <div class="starter-template">
+            <h1>Ofícios</h1>
+        </div>
     {%  for i in lista_oficios %}
-    <a href="/visualizar/{{ i.numero }}" class="btn btn-info"><h4><b>Nº {{ i.numero }}</b></h4></a>
+    <a href="/visualizar/{{ i.numero }}" class="btn btn-dark"><b>Nº {{ i.numero }}</b></a>
     {% endfor %}
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+
+
 
 {% endblock %}
