@@ -4,11 +4,6 @@
     {% csrf_token %}
     {{ form.non_field_errors }}
 <div class="fieldWrapper form-group">
-    {{ form.orgao.errors }}
-    <label for="{{ form.orgao.id_for_label }}">Orgão:</label>
-    {{ form.orgao }}
-</div>
-<div class="fieldWrapper form-group">
     {{ form.numero.errors }}
     <label for="{{ form.numero.id_for_label }}">Número do Ofício:</label>
     {{ form.numero }}
@@ -17,9 +12,7 @@
     {{ form.data.errors }}
     <label for="{{ form.data.id_for_label }}">Data:</label>
     {{ form.data }}
-
 </div>
-
 <div class="fieldWrapper form-group">
     {{ form.para.errors }}
     <label for="{{ form.para.id_for_label }}">Para:</label>

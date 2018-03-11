@@ -77,7 +77,7 @@ def link_callback(uri, rel):
 def render_pdf_view(request, numero):
     template_path = 'user_printer.html'
     dados = get_object_or_404(Oficio, numero=numero, responsavel__usuario=request.user)
-    converter = cnpj(dados.orgao.cnpj)
+    converter = cnpj(dados.responsavel.setor.orgao.cnpj)
     context = {'dados': dados, 'converter': converter}
     # Create a Django response object, and specify content_type as pdf
     response = HttpResponse(content_type='application/pdf')
@@ -97,7 +97,7 @@ def render_pdf_view(request, numero):
 @login_required
 def visualizar(request, numero):
     item = get_object_or_404(Oficio, numero=numero, responsavel__usuario=request.user)
-    converter = cnpj(item.orgao.cnpj)
+    converter = cnpj(item.responsavel.setor.orgao.cnpj)
     context = RequestContext(request)
     return render(request, 'visualizar.html', {'item': item, 'converter': converter}, context)
 

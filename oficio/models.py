@@ -41,8 +41,6 @@ class Responsavel(models.Model):
 
 
 class Oficio(models.Model):
-    orgao = models.ForeignKey(Orgao, on_delete=models.PROTECT)
-
     data = models.DateTimeField(default=timezone.now)
     responsavel = models.ForeignKey(Responsavel, on_delete=models.PROTECT)
     para = models.CharField(max_length=80)
