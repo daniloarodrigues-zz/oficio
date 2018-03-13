@@ -2,6 +2,7 @@ import os
 from django.conf import settings
 from django.contrib.auth import authenticate, login, logout, get_user
 from django.contrib.auth.decorators import login_required
+from django.core.exceptions import ObjectDoesNotExist
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from django.template import RequestContext
@@ -37,10 +38,14 @@ def novo(request):
     if request.method == "POST":
         form = FormOficio(request.POST, request.FILES)
         if form.is_valid():
-            item = form.save(commit=False)
-            item.responsavel = get_object_or_404(Responsavel, usuario=request.user)
-            item.save()
-            return render(request, 'salvo.html', {})
+            numero = request.POST.get('numero')
+            try:
+                n = Oficio.objects.get(numero=numero)
+            except ObjectDoesNotExist:
+                item = form.save(commit=False)
+                item.responsavel = get_object_or_404(Responsavel, usuario=request.user)
+                item.save()
+                return render(request, 'salvo.html', {})
     else:
         form = FormOficio()
     context = RequestContext(request)
