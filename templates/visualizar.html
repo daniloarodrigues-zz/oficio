@@ -46,6 +46,9 @@ p{
 #footer_content{
     bottom: 0px;
 }
+.texto{
+    text-indent: 3em;
+}
 
 </style>
 </head>
@@ -72,7 +75,7 @@ p{
     {{ item.cargo_para }}</p>
     <p id="assunto">Assunto: {{ item.assunto }}</p>
     {% autoescape on %}
-    <p class="justificar">{{ item.texto|linebreaksbr }}{{ BASE_DIR }}</p>
+    <p class="justificar texto">{{ item.texto|linebreaksbr }}{{ BASE_DIR }}</p>
     <p class="centralizar" id="assinatura"><b>{{ item.responsavel.usuario.get_full_name }}</b><br>{{ item.responsavel.cargo.nome }}
     </p>
         <p class="centralizar">

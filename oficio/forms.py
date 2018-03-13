@@ -1,10 +1,11 @@
 from django import forms
 from django.forms import DateInput, TextInput, NumberInput, Textarea
+from django.forms.utils import ErrorList
+
 from oficio.models import Oficio
 
 
 class FormOficio(forms.ModelForm):
-    error = 'Erro'
     class Meta:
         model = Oficio
         fields = ['numero', 'data', 'para', 'cargo_para', 'assunto', 'texto']

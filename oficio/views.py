@@ -38,14 +38,10 @@ def novo(request):
     if request.method == "POST":
         form = FormOficio(request.POST, request.FILES)
         if form.is_valid():
-            numero = request.POST.get('numero')
-            try:
-                n = Oficio.objects.get(numero=numero)
-            except ObjectDoesNotExist:
-                item = form.save(commit=False)
-                item.responsavel = get_object_or_404(Responsavel, usuario=request.user)
-                item.save()
-                return render(request, 'salvo.html', {})
+            item = form.save(commit=False)
+            item.responsavel = get_object_or_404(Responsavel, usuario=request.user)
+            item.save()
+            return render(request, 'salvo.html', {})
     else:
         form = FormOficio()
     context = RequestContext(request)

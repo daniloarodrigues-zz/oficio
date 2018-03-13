@@ -47,7 +47,7 @@ class Oficio(models.Model):
     cargo_para = models.CharField(max_length=80)
     assunto = models.CharField(max_length=80)
     texto = models.TextField()
-    numero = models.IntegerField()
+    numero = models.IntegerField(unique=True)
 
     def __str__(self):
         return "{} - {}".format(str(self.numero), self.responsavel)
