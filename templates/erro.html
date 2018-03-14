@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
 {% block body %}
-    O número {{ numero }} de ofício já existe. Tente um novo número.
+    <p>O número {{ dado.numero }} já está sendo utilizador por outro ofício. Tente um novo número.</p>
+    <a href="/novo/">Voltar</a>
 {% endblock %}

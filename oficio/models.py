@@ -2,7 +2,6 @@ from django.contrib.auth.models import User
 from django.db import models
 from django.utils import timezone
 
-
 class Orgao(models.Model):
     nome = models.CharField(max_length=80)
     logo = models.ImageField()
@@ -41,13 +40,14 @@ class Responsavel(models.Model):
 
 
 class Oficio(models.Model):
+    oficio_id = models.IntegerField(primary_key=True)
     data = models.DateTimeField(default=timezone.now)
     responsavel = models.ForeignKey(Responsavel, on_delete=models.PROTECT)
     para = models.CharField(max_length=80)
     cargo_para = models.CharField(max_length=80)
     assunto = models.CharField(max_length=80)
     texto = models.TextField()
-    numero = models.IntegerField(unique=True)
+    numero = models.AutoField()
 
     def __str__(self):
-        return "{} - {}".format(str(self.numero), self.responsavel)
+        return "Responsável: {} - Ofícios nº: {}".format(self.responsavel,str(self.numero))

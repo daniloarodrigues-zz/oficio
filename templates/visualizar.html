@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
 {% block menu %}
 <li class="nav-item active">
-    <a class="nav-link" href="/detalhes/{{ item.numero }}/pdf/">Baixar PDF <span class="sr-only">(current)</span></a>
+    <a class="nav-link" href="/detalhes/{{ item.id }}/pdf/">Baixar PDF <span class="sr-only">(current)</span></a>
 </li>
 <li class="nav-item active">
-    <a class="nav-link" href="/detalhes/{{ item.numero }}/">Editar <span class="sr-only">(current)</span></a>
+    <a class="nav-link" href="/detalhes/{{ item.id }}/">Editar <span class="sr-only">(current)</span></a>
 </li>
 <li class="nav-item active">
-    <a class="nav-link" href="/delete/{{ item.numero }}/">Deletar <span class="sr-only">(current)</span></a>
+    <a class="nav-link" href="/delete/{{ item.id }}/">Deletar <span class="sr-only">(current)</span></a>
 </li>
 {% endblock %}
 {% block body %}

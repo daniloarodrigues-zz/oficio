@@ -23,12 +23,12 @@ from oficio import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('oficio/', views.oficio),
-    path('detalhes/<int:numero>/', views.detalhes),
+    path('detalhes/<int:oficio_id>/', views.detalhes),
     path('delete/<int:numero>/', views.delete),
-    path('visualizar/<int:numero>/', views.visualizar),
+    path('visualizar/<int:oficio_id>/', views.visualizar),
     path('novo/', views.novo),
     path('', views.home),
-    path('detalhes/<int:numero>/pdf/', views.render_pdf_view),
+    path('detalhes/<int:oficio_id>/pdf/', views.render_pdf_view),
     path('login/',views.do_login),
     path('logout/',views.do_logout),
 ]   + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

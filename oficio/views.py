@@ -21,8 +21,8 @@ def oficio(request):
     return render(request, 'oficio.html', {'lista_oficios': lista_oficios}, context)
 
 @login_required
-def detalhes(request, numero):
-    item = get_object_or_404(Oficio, numero=numero)
+def detalhes(request, oficio_id):
+    item = get_object_or_404(Oficio, pk=oficio_id)
     if request.method == "POST":
         form = FormOficio(request.POST, request.FILES, instance=item)
         if form.is_valid():
@@ -37,11 +37,18 @@ def detalhes(request, numero):
 def novo(request):
     if request.method == "POST":
         form = FormOficio(request.POST, request.FILES)
-        if form.is_valid():
-            item = form.save(commit=False)
-            item.responsavel = get_object_or_404(Responsavel, usuario=request.user)
-            item.save()
-            return render(request, 'salvo.html', {})
+        try:
+            numero = request.POST.get('numero')
+            buscaritensusuario = Oficio.objects.filter(responsavel__usuario=request.user)
+            dado = buscaritensusuario.get(numero=numero)
+            context = RequestContext(request)
+            return render(request, "erro.html", {'dado':dado}, context)
+        except ObjectDoesNotExist:
+            if form.is_valid():
+                item = form.save(commit=False)
+                item.responsavel = get_object_or_404(Responsavel, usuario=request.user)
+                item.save()
+                return render(request, 'salvo.html', {})
     else:
         form = FormOficio()
     context = RequestContext(request)
@@ -75,9 +82,9 @@ def link_callback(uri, rel):
     return path
 
 @login_required
-def render_pdf_view(request, numero):
+def render_pdf_view(request, oficio_id):
     template_path = 'user_printer.html'
-    dados = get_object_or_404(Oficio, numero=numero, responsavel__usuario=request.user)
+    dados = get_object_or_404(Oficio, pk=oficio_id, responsavel__usuario=request.user)
     converter = cnpj(dados.responsavel.setor.orgao.cnpj)
     context = {'dados': dados, 'converter': converter}
     # Create a Django response object, and specify content_type as pdf
@@ -96,15 +103,15 @@ def render_pdf_view(request, numero):
     return response
 
 @login_required
-def visualizar(request, numero):
-    item = get_object_or_404(Oficio, numero=numero, responsavel__usuario=request.user)
+def visualizar(request, oficio_id):
+    item = get_object_or_404(Oficio, pk=oficio_id, responsavel__usuario=request.user)
     converter = cnpj(item.responsavel.setor.orgao.cnpj)
     context = RequestContext(request)
     return render(request, 'visualizar.html', {'item': item, 'converter': converter}, context)
 
 @login_required
-def delete(request, numero):
-    item = get_object_or_404(Oficio, numero=numero, responsavel__usuario=request.user)
+def delete(request, oficio_id):
+    item = get_object_or_404(Oficio, pk=oficio_id, responsavel__usuario=request.user)
     item.delete()
     context = RequestContext(request)
     return render(request, 'deletar.html', {'item': item}, context)
