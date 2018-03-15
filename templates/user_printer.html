@@ -69,6 +69,10 @@ p{
 .centralizar{
     text-align: center;
 }
+.identa p{
+    text-indent: 4em;
+    text-align: justify;
+}
 </style>
 </head>
 
@@ -96,7 +100,9 @@ p{
     {{ dados.cargo_para }}</p>
     <p id="assunto">Assunto: {{ dados.assunto }}</p>
     {% autoescape on %}
-    <p class="justificar">{{ dados.texto|linebreaksbr }}{{ BASE_DIR }}</p>
+        <div class="identa">
+    {{ item.texto|linebreaks }}{{ BASE_DIR }}
+        </div>
         <p class="centralizar" id="assinatura"><b>{{ dados.responsavel.usuario.get_full_name }}</b><br>{{ dados.responsavel.cargo }}</p>
 
 {% endautoescape %}
