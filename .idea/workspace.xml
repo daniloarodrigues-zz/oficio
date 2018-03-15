@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="427cf377-c0e9-40d9-bdb2-ae887bc1e56c" name="Default" comment="Adição de arquivos da aplicação">
       <change beforePath="$PROJECT_DIR$/templates/user_printer.html" afterPath="$PROJECT_DIR$/templates/user_printer.html" />
+      <change beforePath="$PROJECT_DIR$/templates/visualizar.html" afterPath="$PROJECT_DIR$/templates/visualizar.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,8 +65,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oficio/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="47" column="33" lean-forward="false" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+            <state relative-caret-position="292">
+              <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="11" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -108,8 +109,8 @@
       <file leaf-file-name="user_printer.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/user_printer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+            <state relative-caret-position="436">
+              <caret line="96" column="74" lean-forward="false" selection-start-line="96" selection-start-column="74" selection-end-line="96" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -118,8 +119,8 @@
       <file leaf-file-name="visualizar.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/visualizar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="63" column="59" lean-forward="true" selection-start-line="63" selection-start-column="59" selection-end-line="63" selection-end-column="59" />
+            <state relative-caret-position="490">
+              <caret line="72" column="72" lean-forward="false" selection-start-line="72" selection-start-column="72" selection-end-line="72" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -712,16 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oficio/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="47" column="33" lean-forward="false" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/oficio/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
@@ -758,18 +749,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/oficio/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/visualizar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="63" column="59" lean-forward="true" selection-start-line="63" selection-start-column="59" selection-end-line="63" selection-end-column="59" />
+        <state relative-caret-position="490">
+          <caret line="72" column="72" lean-forward="false" selection-start-line="72" selection-start-column="72" selection-end-line="72" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/user_printer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        <state relative-caret-position="436">
+          <caret line="96" column="74" lean-forward="false" selection-start-line="96" selection-start-column="74" selection-end-line="96" selection-end-column="74" />
           <folding />
         </state>
       </provider>

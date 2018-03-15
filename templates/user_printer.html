@@ -94,7 +94,7 @@ p{
     </div>
 
     <!-- HTML Content -->
-    <p class="data" id="data">{{ dados.data.date }}</p>
+    <p class="data" id="data">{{ dados.responsavel.setor.orgao.cidade }}, {{ dados.data.date }}</p>
     <p id="numero">Ofício nº {{ dados.numero|stringformat:".3d" }}/2018</p>
     <p id="dadospara">Srº {{ dados.para }}<br>
     {{ dados.cargo_para }}</p>
