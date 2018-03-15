@@ -46,7 +46,7 @@ p{
 #footer_content{
     bottom: 0px;
 }
-.identa p{
+.identa br{
     text-indent: 4em;
     text-align: justify;
 }
@@ -77,7 +77,7 @@ p{
     <p id="assunto">Assunto: {{ item.assunto }}</p>
     {% autoescape on %}
         <div class="identa">
-    {{ item.texto|linebreaks }}{{ BASE_DIR }}
+    {{ item.texto|linebreaksbr }}{{ BASE_DIR }}
         </div>
     <p class="centralizar" id="assinatura"><b>{{ item.responsavel.usuario.get_full_name }}</b><br>{{ item.responsavel.cargo.nome }}
     </p>
