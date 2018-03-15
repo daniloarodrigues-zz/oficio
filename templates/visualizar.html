@@ -76,9 +76,7 @@ p{
     {{ item.cargo_para }}</p>
     <p id="assunto">Assunto: {{ item.assunto }}</p>
     {% autoescape on %}
-        <div class="identa">
-    {{ item.texto|linebreaksbr }}{{ BASE_DIR }}
-        </div>
+    <p class="justificar">{{ item.texto|linebreaksbr }}{{ BASE_DIR }}</p>
     <p class="centralizar" id="assinatura"><b>{{ item.responsavel.usuario.get_full_name }}</b><br>{{ item.responsavel.cargo.nome }}
     </p>
         <p class="centralizar">
