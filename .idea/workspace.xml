@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="427cf377-c0e9-40d9-bdb2-ae887bc1e56c" name="Default" comment="Adição de arquivos da aplicação">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Beta4/urls.py" afterPath="$PROJECT_DIR$/Beta4/urls.py" />
-      <change beforePath="$PROJECT_DIR$/oficio/migrations/0002_oficio_ano.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/oficio/migrations/0003_auto_20180305_1155.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/oficio/migrations/0004_auto_20180305_1159.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/oficio/migrations/0005_remove_oficio_ano.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/oficio/migrations/0006_auto_20180305_1258.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/oficio/migrations/0007_auto_20180307_1628.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/oficio/migrations/0008_remove_responsavel_email.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/oficio/migrations/0009_auto_20180307_2301.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/oficio/migrations/0010_responsavel_orgao.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/oficio/migrations/0011_auto_20180311_1956.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/oficio/migrations/0012_auto_20180313_1055.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/oficio/migrations/0013_auto_20180313_1245.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/oficio/migrations/0014_auto_20180313_2209.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/oficio/migrations/0015_auto_20180313_2225.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/oficio/models.py" afterPath="$PROJECT_DIR$/oficio/models.py" />
-      <change beforePath="$PROJECT_DIR$/oficio/views.py" afterPath="$PROJECT_DIR$/oficio/views.py" />
-      <change beforePath="$PROJECT_DIR$/templates/novo.html" afterPath="$PROJECT_DIR$/templates/novo.html" />
+      <change beforePath="$PROJECT_DIR$/templates/detalhes.html" afterPath="$PROJECT_DIR$/templates/detalhes.html" />
+      <change beforePath="$PROJECT_DIR$/templates/visualizar.html" afterPath="$PROJECT_DIR$/templates/visualizar.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -82,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/oficio/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="558">
-              <caret line="47" column="56" lean-forward="true" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
+              <caret line="47" column="56" lean-forward="false" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -112,21 +94,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detalhes.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="detalhes.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/detalhes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="738">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="14" />
+            <state relative-caret-position="508">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Beta4/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+            <state relative-caret-position="126">
+              <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
               <folding>
                 <element signature="e#629#661#0" expanded="true" />
               </folding>
@@ -137,8 +119,8 @@
       <file leaf-file-name="visualizar.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/visualizar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+            <state relative-caret-position="526">
+              <caret line="79" column="47" lean-forward="false" selection-start-line="79" selection-start-column="47" selection-end-line="79" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -188,16 +170,16 @@
         <option value="$PROJECT_DIR$/static/login/js/index.js" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/login.html" />
-        <option value="$PROJECT_DIR$/templates/detalhes.html" />
         <option value="$PROJECT_DIR$/templates/user_printer.html" />
         <option value="$PROJECT_DIR$/oficio/forms.py" />
         <option value="$PROJECT_DIR$/templates/oficio.html" />
-        <option value="$PROJECT_DIR$/templates/visualizar.html" />
         <option value="$PROJECT_DIR$/templates/erro.html" />
         <option value="$PROJECT_DIR$/oficio/models.py" />
         <option value="$PROJECT_DIR$/oficio/views.py" />
         <option value="$PROJECT_DIR$/templates/novo.html" />
         <option value="$PROJECT_DIR$/Beta4/urls.py" />
+        <option value="$PROJECT_DIR$/templates/visualizar.html" />
+        <option value="$PROJECT_DIR$/templates/detalhes.html" />
       </list>
     </option>
   </component>
@@ -739,14 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/detalhes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/oficio/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
@@ -760,7 +734,7 @@
     <entry file="file://$PROJECT_DIR$/oficio/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
-          <caret line="47" column="56" lean-forward="true" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
+          <caret line="47" column="56" lean-forward="false" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -775,21 +749,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Beta4/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+          <folding>
+            <element signature="e#629#661#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/visualizar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        <state relative-caret-position="526">
+          <caret line="79" column="47" lean-forward="false" selection-start-line="79" selection-start-column="47" selection-end-line="79" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Beta4/urls.py">
+    <entry file="file://$PROJECT_DIR$/templates/detalhes.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-          <folding>
-            <element signature="e#629#661#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="508">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
