@@ -101,7 +101,7 @@ p{
     <p id="assunto">Assunto: {{ dados.assunto }}</p>
     {% autoescape on %}
         <div class="identa">
-    {{ item.texto|linebreaks }}{{ BASE_DIR }}
+    {{ dados.texto|linebreaks }}{{ BASE_DIR }}
         </div>
         <p class="centralizar" id="assinatura"><b>{{ dados.responsavel.usuario.get_full_name }}</b><br>{{ dados.responsavel.cargo }}</p>
 
