@@ -3,6 +3,7 @@ from django.conf import settings
 from django.contrib.auth import authenticate, login, logout, get_user
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import ObjectDoesNotExist
+from django.db import IntegrityError
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from django.template import RequestContext
@@ -38,17 +39,16 @@ def novo(request):
     if request.method == "POST":
         form = FormOficio(request.POST, request.FILES)
         try:
-            numero = request.POST.get('numero')
-            buscaritensusuario = Oficio.objects.filter(responsavel__usuario=request.user)
-            dado = buscaritensusuario.get(numero=numero)
-            context = RequestContext(request)
-            return render(request, "erro.html", {'dado':dado}, context)
-        except ObjectDoesNotExist:
             if form.is_valid():
                 item = form.save(commit=False)
                 item.responsavel = get_object_or_404(Responsavel, usuario=request.user)
                 item.save()
                 return render(request, 'salvo.html', {})
+        except IntegrityError:
+            mensagem = "Número de ofício já está em uso"
+            item = form.save(commit=False)
+            item.responsavel = get_object_or_404(Responsavel, usuario=request.user)
+            return render(request, 'novo.html', {'mensagem': mensagem, 'form': form})
     else:
         form = FormOficio()
     context = RequestContext(request)

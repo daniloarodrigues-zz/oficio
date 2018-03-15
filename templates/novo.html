@@ -4,6 +4,9 @@
     {% csrf_token %}
     {{ form.non_field_errors }}
 <div class="fieldWrapper form-group">
+{% if mensagem %}
+    <p class="alert alert-danger"><strong>{{ mensagem }}</strong></p>
+{% endif %}
     {% if form.numero.errors %}
         {% for error in form.numero.errors %}
         <p class="alert alert-danger"><strong>{{ error|escape }}</strong></p>

@@ -38,16 +38,17 @@ class Responsavel(models.Model):
     def __str__(self):
         return self.usuario.get_full_name()
 
-
 class Oficio(models.Model):
-    oficio_id = models.IntegerField(primary_key=True)
     data = models.DateTimeField(default=timezone.now)
     responsavel = models.ForeignKey(Responsavel, on_delete=models.PROTECT)
     para = models.CharField(max_length=80)
     cargo_para = models.CharField(max_length=80)
     assunto = models.CharField(max_length=80)
     texto = models.TextField()
-    numero = models.AutoField()
+    numero = models.IntegerField()
 
     def __str__(self):
         return "Responsável: {} - Ofícios nº: {}".format(self.responsavel,str(self.numero))
+
+    class Meta:
+        unique_together = [('responsavel', 'numero')]
