@@ -70,4 +70,4 @@
 
 <h4>Contatos</h4>
 
-<p>Desenvolvedor Principal: Danilo Rodrigues - <a href="mail:to"> danilorodrigues@nivsoft.com.br</a></p>
+<p>Desenvolvedor Principal: Danilo Rodrigues - <a href="mailto:danilorodrigues@nivsoft.com.br?Subject=Beta4"> danilorodrigues@nivsoft.com.br</a></p>
