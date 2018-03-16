@@ -50,7 +50,7 @@ img {
     position: relative;
 }
 #header_content h1{
-    font-size: 14pt;
+    font-size: 11pt;
     text-align: center;
 }
 p{
@@ -82,9 +82,9 @@ p{
         <img src="{{ dados.responsavel.setor.orgao.logo.url }}"/>
     </div>
     <div id="header_content">
-        <h1>{{ dados.responsavel.setor.orgao }}<br>
-            {{ dados.responsavel.setor.nome }}<br>
-            {{ converter }}</h1>
+        <h1><b>{{ dados.responsavel.setor.orgao|upper }}<br>
+            {{ dados.responsavel.setor.nome|upper }}<br>
+            {{ converter }}</b></h1>
     </div>
 
     <!-- Content for Static Frame 'footer_frame' -->
