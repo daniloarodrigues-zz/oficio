@@ -43,7 +43,7 @@
   <li>Página inicial listando todos os ofícios por ano.</li>
   <li>Menu "Novo" - Cria um novo ofício</li>
   <li>Visualizar ofício em uma página html</li>
-  <li>Baixar ofício em PDF</li>
+  <li>Menu "Baixar PDF - Baixa um arquivo em formato PDF</li>
   <li>Menu "Editar" - Edita oficio já existente</li>
   <li>Menu "início" - Volta para a página inicial</li>
   <li>Menu "Deletar" - Apaga ofício selecionado</li>
