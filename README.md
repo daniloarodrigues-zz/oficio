@@ -18,16 +18,20 @@
 
 <hr>
 
+<ul>
 <i><li>Saber criar containers no docker - (Necessário para fazer a instalação do container com nosso <a href="https://github.com/daniloarodrigues/oficio/blob/master/docker-compose.yml">docker-compose.yml</a>)</li>
 <li>Saber usar os comandos básicos do terminal linux - (Necessário para se movimentar entre pastas e fazer instalaçãos de pacotes)</li>
 <li>Saber os comandos básicos do virtualenv - (Necessário para ativar a máquina virtual e subir a aplicação com gunicorn)</li>
 <li>Saber o básico do nginx - (Necessário para fazer a configuração mais básica do <a href="https://github.com/daniloarodrigues/oficio/blob/master/default.conf">nginx</a>)</li></i>
+<ul>
 
 <hr>
 
 <p>Conhecimentos recomendados <b>(Não obrigatório)</b>:</p>
 
+<ul>
 <i><li>Saber o básico de configurações de dns - (Necesários para adicionar um domínio para acessar o sistema)</li></i>
+</ul>
 
 <h4>Funcionalidades já implementadas </h4>
 
