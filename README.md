@@ -68,6 +68,6 @@
 
 <hr>
 
-<<h4>Contatos</h4>
+<h4>Contatos</h4>
 
-<p>Desenvolvedor Principal: Danilo Rodrigues - danilorodrigues@nivsoft.com.br</p>
+<p>Desenvolvedor Principal: Danilo Rodrigues - <a href="mail:to"> danilorodrigues@nivsoft.com.br</a></p>
