@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="427cf377-c0e9-40d9-bdb2-ae887bc1e56c" name="Default" comment="Adição de arquivos da aplicação">
       <change beforePath="$PROJECT_DIR$/templates/user_printer.html" afterPath="$PROJECT_DIR$/templates/user_printer.html" />
-      <change beforePath="$PROJECT_DIR$/templates/visualizar.html" afterPath="$PROJECT_DIR$/templates/visualizar.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -108,21 +107,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_printer.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="user_printer.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/user_printer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="52" column="17" lean-forward="false" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+            <state relative-caret-position="508">
+              <caret line="98" column="30" lean-forward="false" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="visualizar.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="visualizar.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/visualizar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="65" column="27" lean-forward="false" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
+            <state relative-caret-position="508">
+              <caret line="74" column="22" lean-forward="true" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -180,8 +179,8 @@
         <option value="$PROJECT_DIR$/templates/novo.html" />
         <option value="$PROJECT_DIR$/oficio/models.py" />
         <option value="$PROJECT_DIR$/templates/detalhes.html" />
-        <option value="$PROJECT_DIR$/templates/user_printer.html" />
         <option value="$PROJECT_DIR$/templates/visualizar.html" />
+        <option value="$PROJECT_DIR$/templates/user_printer.html" />
       </list>
     </option>
   </component>
@@ -764,18 +763,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user_printer.html">
+    <entry file="file://$PROJECT_DIR$/templates/visualizar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="52" column="17" lean-forward="false" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+        <state relative-caret-position="508">
+          <caret line="74" column="22" lean-forward="true" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/visualizar.html">
+    <entry file="file://$PROJECT_DIR$/templates/user_printer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="65" column="27" lean-forward="false" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
+        <state relative-caret-position="508">
+          <caret line="98" column="30" lean-forward="false" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
           <folding />
         </state>
       </provider>
