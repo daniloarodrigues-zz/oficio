@@ -37,7 +37,7 @@
 
 <hr>
 
-<h4>Funcionalidades já implementadas </h4>
+<h4>Funcionalidades já implementadas</h4>
 
 <ul>
   <li>Página inicial listando todos os ofícios por ano.</li>
@@ -48,3 +48,26 @@
   <li>Menu "Baixar PDF - Baixa um arquivo em formato PDF</li>
   <li>Menu "Deletar" - Apaga ofício selecionado</li>
 </ul>
+
+<hr>
+
+<h2>Contribua com o projeto</h2>
+
+<h4>Como posso contribuir?</h4>
+
+<p>Nosso projeto está em fase de desenvolvimento. Ainda precisa de muitos ajustes. Desde layout à correções de textos.</p>
+
+<p>Abaixo temos uma pequena lista de como você pode contribuir</p>
+
+<ul>
+  <li>HTML5/CSS3: Desenvolvimento de telas mais dinâmicas em html5</li>
+  <li>Python/Django: Melhoria no código já existente com o objetivo de melhorar o desempenho</li>
+  <li>Sugestões e Ideias: Sugerir novas ferramentas ou melhorias do sistema</li>
+  <li>Bugs: Encontrar bugs e reportar para que possamos corrigir</li>
+</ul>
+
+<hr>
+
+<<h4>Contatos</h4>
+
+<p>Desenvolvedor Principal: Danilo Rodrigues - danilorodrigues@nivsoft.com.br</p>

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="427cf377-c0e9-40d9-bdb2-ae887bc1e56c" name="Default" comment="Adição de arquivos da aplicação">
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-    </list>
+    <list default="true" id="427cf377-c0e9-40d9-bdb2-ae887bc1e56c" name="Default" comment="Adição de arquivos da aplicação" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
