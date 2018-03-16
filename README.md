@@ -13,15 +13,15 @@
 <p>Embora não seja difícil fazer a implantação do sistema, é necessário que o responsável tenha alguns conhecimentos básicos:</p>
 <pre>
   <ul>
-    <li>Saber criar containers no docker - (Necessário para fazer a instalação do container com nosso docker-compose.yml)</li>
-    <li>Saber usar os comandos básicos do terminal linux - (Necessário para se movimentar entre pastas e fazer instalaçãos de pacotes)</li>
-    <li>Saber os comandos básicos do virtualenv - (Necessário para ativar a máquina virtual e subir a aplicação com gunicorn)</li>
-    <li>Saber o básico do nginx - (Necessário para fazer a configuração mais básica do nginx que está disponível em nosso git)</li>
+    <p>Saber criar containers no docker - (Necessário para fazer a instalação do container com nosso docker-compose.yml)</p>
+    <p>Saber usar os comandos básicos do terminal linux - (Necessário para se movimentar entre pastas e fazer instalaçãos de pacotes)</p>
+    <p>Saber os comandos básicos do virtualenv - (Necessário para ativar a máquina virtual e subir a aplicação com gunicorn)</p>
+    <p>Saber o básico do nginx - (Necessário para fazer a configuração mais básica do nginx que está disponível em nosso git)</p>
   </ul>
 </pre>
 <p>Conhecimentos recomendados <b>(Não obrigatórios)</b>:</p>
 <pre>
   <ul>
-    <li>Saber o básico de configurações de dns - (Necesários para adicionar um domínio para acessar o sistema)</li>
+    <p>Saber o básico de configurações de dns - (Necesários para adicionar um domínio para acessar o sistema)</p>
   </ul>
 </pre>
