@@ -14,12 +14,12 @@
 
 <p>O objetivo é facilitar o máximo para que não haja dificuldades na implementação do mesmo. Para isso, disponibilizamos um vídeo mais abaixo que explica de forma simples e rápida como implementar o sistema em uma rede local.</p>
 
-<p>Embora não seja difícil fazer a implantação do sistema, é necessário que o responsável tenha alguns conhecimentos básicos:</p>
+<p><u>Embora não seja difícil fazer a implantação do sistema, é necessário que o responsável tenha alguns conhecimentos básicos:</u></p>
 
-<spam><li>Saber criar containers no docker - (Necessário para fazer a instalação do container com nosso <a href="https://github.com/daniloarodrigues/oficio/blob/master/docker-compose.yml">docker-compose.yml</a>)</li>
+<i><li>Saber criar containers no docker - (Necessário para fazer a instalação do container com nosso <a href="https://github.com/daniloarodrigues/oficio/blob/master/docker-compose.yml">docker-compose.yml</a>)</li>
 <li>Saber usar os comandos básicos do terminal linux - (Necessário para se movimentar entre pastas e fazer instalaçãos de pacotes)</li>
 <li>Saber os comandos básicos do virtualenv - (Necessário para ativar a máquina virtual e subir a aplicação com gunicorn)</li>
-<li>Saber o básico do nginx - (Necessário para fazer a configuração mais básica do <a href="https://github.com/daniloarodrigues/oficio/blob/master/default.conf">nginx</a>)</li></spam>
+<li>Saber o básico do nginx - (Necessário para fazer a configuração mais básica do <a href="https://github.com/daniloarodrigues/oficio/blob/master/default.conf">nginx</a>)</li></i>
 
-<p>Conhecimentos recomendados <b>(Não obrigatórios)</b>:</p>
-<spam><li>Saber o básico de configurações de dns - (Necesários para adicionar um domínio para acessar o sistema)</li></spam>
+<p><u>Conhecimentos recomendados <b>(Não obrigatórios)</b>:</u></p>
+<i><li>Saber o básico de configurações de dns - (Necesários para adicionar um domínio para acessar o sistema)</li></i>
