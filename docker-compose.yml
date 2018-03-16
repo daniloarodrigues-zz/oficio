@@ -7,21 +7,21 @@ services:
        - db_data:/var/lib/mysql
      restart: always
      environment:
-       MYSQL_ROOT_PASSWORD: somewordpress
-       MYSQL_DATABASE: wordpress
-       MYSQL_USER: wordpress
-       MYSQL_PASSWORD: wordpress
+       MYSQL_ROOT_PASSWORD: 582676da
+       MYSQL_DATABASE: aplicacao
+       MYSQL_USER: root
+       MYSQL_PASSWORD: 582676da
 
-   wordpress:
+   nginx:
      depends_on:
        - db
-     image: wordpress:latest
+     image: nginx:latest
      ports:
        - "8080:80"
      restart: always
      environment:
-       WORDPRESS_DB_HOST: db:3306
-       WORDPRESS_DB_USER: wordpress
-       WORDPRESS_DB_PASSWORD: wordpress
+       DB_HOST: db:3306
+       DB_USER: root
+       DB_PASSWORD: 582676da
 volumes:
     db_data:
