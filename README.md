@@ -2,13 +2,19 @@
 
 <h2>Sistema para geração e controle de emissão de ofícios do Poder Legislativo.</h2>
 
+<hr>
+
 <h4>O que é?</h4>
 
 <p>O Beta4 é um sistema experimental de geração de ofícios do Poder Legislativo. Seu desenvolvimento inicial se deu devido a falta de padronização e de local para armazenar ofícios da Câmara Municipal do Jaboatão dos Guararapes/PE. Então para agilizar e facilitar o processo de criação e armazenamento dos ofícios gerados pela Casa Legislativa idealizei o sistema de forma que todos os gabinetes e setores da Câmara pudessem utilizar o sistema. Com ele, o órgão pode criar usuários para determinados setores que terão acesso ao sistema podendo gerar ofícios numerados que são organizados em ordem crescente, e ficam armezenados em um servidor local podendo ser acessado de qualquer dispositivo (PC, Tablet, Celular e outros equipamentos com internet).</p>
 
+<hr>
+
 <h4>Quem pode usar?</h4>
 
 <p>Qualquer entidade, seja pessoa física ou jurídica, que queira um sistema de geração de documentos. Embora o sistema esteja personalizado para gerar ofícios do Poder Legislativo, ele é facilmente customizável, e pode ser utilizado para qualquer outro tipo de documento.</p>
+
+<hr>
 
 <h4>Qualquer um consegue fazer as configurações iniciais?</h4>
 
@@ -28,6 +34,8 @@
 <ul>
   <li>Saber o básico de configurações de dns - (Necesários para adicionar um domínio para acessar o sistema)</li>
 </ul>
+
+<hr>
 
 <h4>Funcionalidades já implementadas </h4>
 
