@@ -4,39 +4,76 @@
     {% csrf_token %}
     {{ form.non_field_errors }}
 <div class="fieldWrapper form-group">
-    {{ form.numero.errors }}
+{% if mensagem %}
+    <p class="alert alert-danger"><strong>{{ mensagem }}</strong></p>
+{% endif %}
+    {% if form.numero.errors %}
+        {% for error in form.numero.errors %}
+        <p class="alert alert-danger"><strong>{{ error|escape }}</strong></p>
+    {% endfor %}
+    {% endif %}
     <label for="{{ form.numero.id_for_label }}">Número do Ofício:</label>
     {{ form.numero }}
 </div>
-<div class="fieldWrapper form-group">
-    {{ form.data.errors }}
+<div class="form-row">
+<div class="fieldWrapper form-group col-md-2">
+    {% if form.data.errors %}
+        {% for error in form.data.errors %}
+        <p class="alert alert-danger"><strong>{{ error|escape }}</strong></p>
+    {% endfor %}
+    {% endif %}
     <label for="{{ form.data.id_for_label }}">Data:</label>
     {{ form.data }}
-
 </div>
-<div class="fieldWrapper form-group">
-    {{ form.para.errors }}
+<div class="fieldWrapper form-check-label col-md-1">
+    {% if form.tratamento.errors %}
+        {% for error in form.tratamento.errors %}
+        <p class="alert alert-danger"><strong>{{ error|escape }}</strong></p>
+    {% endfor %}
+    {% endif %}
+    <label for="{{ form.para.id_for_label }}">Tratamento:</label>
+    {{ form.tratamento }}
+</div>
+<div class="fieldWrapper form-group col-md-3">
+    {% if form.para.errors %}
+        {% for error in form.para.errors %}
+        <p class="alert alert-danger"><strong>{{ error|escape }}</strong></p>
+    {% endfor %}
+    {% endif %}
     <label for="{{ form.para.id_for_label }}">Para:</label>
     {{ form.para }}
 </div>
-<div class="fieldWrapper form-group">
-    {{ form.cargo_para.errors }}
+<div class="fieldWrapper form-group col-md-6">
+    {% if form.cargo_para.errors %}
+        {% for error in form.cargo_para.errors %}
+        <p class="alert alert-danger"><strong>{{ error|escape }}</strong></p>
+    {% endfor %}
+    {% endif %}
     <label for="{{ form.cargo_para.id_for_label }}">Cargo Para:</label>
     {{ form.cargo_para }}
 </div>
+</div>
 <div class="fieldWrapper form-group">
-    {{ form.assunto.errors }}
+    {% if form.assunto.errors %}
+        {% for error in form.assunto.errors %}
+        <p class="alert alert-danger"><strong>{{ error|escape }}</strong></p>
+    {% endfor %}
+    {% endif %}
     <label for="{{ form.assunto.id_for_label }}">Assunto:</label>
     {{ form.assunto }}
 </div>
 <div class="fieldWrapper form-group">
-    {{ form.texto.errors }}
+    {% if form.texto.errors %}
+        {% for error in form.texto.errors %}
+        <p class="alert alert-danger"><strong>{{ error|escape }}</strong></p>
+    {% endfor %}
+    {% endif %}
     <label for="{{ form.texto.id_for_label }}">Texto:</label>
     {{ form.texto }}
 </div>
 
-    <button class="btn btn-group btn-primary" type="submit">Atualizar</button>
-<a class="btn btn-group btn-primary" href="pdf/">Baixar PDF</a>
-<a class="btn btn-group btn-primary" href="/visualizar/{{ item.id }}">Cancelar</a>
+    <button class="btn btn-group btn-primary" type="submit">Salvar</button>
+<a href="/oficio/">Voltar para a listagem</a>
+
 </form>
 {% endblock %}

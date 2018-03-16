@@ -72,7 +72,7 @@ p{
     <!-- HTML Content -->
     <p class="data" id="data">{{ item.responsavel.setor.orgao.cidade }}, {{ item.data.date }}</p>
     <p id="numero">Ofício nº {{ item.numero|stringformat:".3d" }}/{{ item.data.year }}</p>
-    <p id="dadospara">Srº {{ item.para }}<br>
+    <p id="dadospara">{{ item.tratamento }} {{ item.para }}<br>
     {{ item.cargo_para }}</p>
     <p id="assunto">Assunto: {{ item.assunto }}</p>
     {% autoescape on %}

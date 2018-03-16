@@ -38,9 +38,22 @@ class Responsavel(models.Model):
     def __str__(self):
         return self.usuario.get_full_name()
 
+
 class Oficio(models.Model):
+    SENHOR = 'Sr.'
+    SENHORA = 'Srª'
+    VOSSASENHORIA = 'V.S.ª'
+    VOSSAEXCELENCIA = 'V.Ex.ª'
+    PRONOMES_TRATAMENTO = (
+        (SENHOR, 'Senhor'),
+        (SENHORA, 'Senhora'),
+        (VOSSASENHORIA, 'Vossa Senhoria'),
+        (VOSSAEXCELENCIA, 'Vossa Excelência'),
+    )
+
     data = models.DateTimeField(default=timezone.now)
     responsavel = models.ForeignKey(Responsavel, on_delete=models.PROTECT)
+    tratamento = models.CharField(max_length=20, choices=PRONOMES_TRATAMENTO, default=SENHOR)
     para = models.CharField(max_length=80)
     cargo_para = models.CharField(max_length=80)
     assunto = models.CharField(max_length=80)
