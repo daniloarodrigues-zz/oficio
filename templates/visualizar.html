@@ -24,7 +24,7 @@ img {
     display: block;
 }
 #header_content h1{
-    font-size: 14pt;
+    font-size: 11pt;
     text-align: center;
 }
 p{
@@ -35,7 +35,7 @@ p{
 }
 #footer_content{
     text-align: center;
-    font-size: 11pt;
+    font-size: 12pt;
 }
 .justificar{
     text-align: justify;
@@ -43,14 +43,13 @@ p{
 .centralizar{
     text-align: center;
 }
-#footer_content{
-    bottom: 0px;
-}
-.identa br{
-    text-indent: 4em;
+.texto p{
+    text-indent: 3em;
     text-align: justify;
 }
-
+.assinatura{
+    text-align: center;
+}
 </style>
 </head>
 
@@ -76,10 +75,12 @@ p{
     {{ item.cargo_para }}</p>
     <p id="assunto">Assunto: {{ item.assunto }}</p>
     {% autoescape on %}
-    <p class="justificar">{{ item.texto|linebreaksbr }}{{ BASE_DIR }}</p>
+    <div class="texto">
+        {{ item.texto|linebreaksbr }}{{ BASE_DIR }}
+    </div>
     <p class="centralizar" id="assinatura"><b>{{ item.responsavel.usuario.get_full_name }}</b><br>{{ item.responsavel.cargo.nome }}
     </p>
-        <p class="centralizar">
+        <p class="assinatura">
         {{ item.responsavel.setor.endereco }}<br>
         E-Mail: {{ item.responsavel.usuario.email }}
         </p>

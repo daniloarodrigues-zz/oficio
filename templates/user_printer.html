@@ -13,7 +13,7 @@
             left: 50pt; width: 512pt; top: 50pt; height: 100pt;
         }
         @frame content_frame {          /* Content Frame */
-            left: 60pt; width: 472pt; top: 390pt; height: 260pt;
+            left: 60pt; width: 472pt; top: 150pt; height: 600pt;
         }
         @frame footer_frame {           /* Another static Frame */
             -pdf-frame-content: footer_content;
@@ -23,26 +23,6 @@
             -pdf-frame-content: imagem;
             left: 30pt; width: 512pt; top: 40pt; height: 100pt;
         }
-        @frame assinatura{
-            -pdf-frame-content: assinatura;
-            left: 60pt; width: 472pt; top: 670pt; height: 40pt;
-        }
-        @frame data{
-            -pdf-frame-content: data;
-            left: 60pt; width: 472pt; top: 170pt; height: 40pt;
-        }
-        @frame numero{
-            -pdf-frame-content: numero;
-            left: 60pt; width: 472pt; top: 225pt; height: 40pt;
-        }
-        @frame dadospara{
-            -pdf-frame-content: dadospara;
-            left: 60pt; width: 472pt; top: 280pt; height: 40pt;
-        }
-        @frame assunto{
-            -pdf-frame-content: assunto;
-            left: 60pt; width: 472pt; top: 340pt; height: 40pt;
-    }
         
     }
 img {
@@ -61,7 +41,7 @@ p{
 }
 #footer_content{
     text-align: center;
-    font-size: 11pt;
+    font-size: 12pt;
 }
 .justificar{
     text-align: justify;
@@ -69,9 +49,12 @@ p{
 .centralizar{
     text-align: center;
 }
-.identa p{
+.texto p{
     text-indent: 3em;
     text-align: justify;
+}
+.assinatura{
+    text-align: center;
 }
 </style>
 </head>
@@ -94,16 +77,24 @@ p{
     </div>
 
     <!-- HTML Content -->
-    <p class="data" id="data">{{ dados.responsavel.setor.orgao.cidade }}, {{ dados.data.date }}</p>
-    <p id="numero">Ofício nº {{ dados.numero|stringformat:".3d" }}/2018</p>
-    <p id="dadospara">{{ dados.tratamento }} {{ dados.para }}<br>
-    {{ dados.cargo_para }}</p>
-    <p id="assunto">Assunto: {{ dados.assunto }}</p>
     {% autoescape on %}
-        <div class="identa">
-    {{ dados.texto|linebreaks }}{{ BASE_DIR }}
+    <p class="data">{{ dados.responsavel.setor.orgao.cidade }}, {{ dados.data.date }}</p>
+        <br/>
+    <p><b>Ofício nº {{ dados.numero|stringformat:".3d" }}/{{ dados.data.year }}</b></p>
+<br/>
+    <p>{{ dados.tratamento }} {{ dados.para }}<br>
+    {{ dados.cargo_para }}</p>
+<br/>
+    <p>Assunto: <b>{{ dados.assunto }}</b></p>
+<br/>
+        <div class="texto">
+        <p>{{ dados.texto|linebreaks }}{{ BASE_DIR }}</p>
         </div>
-        <p class="centralizar" id="assinatura"><b>{{ dados.responsavel.usuario.get_full_name }}</b><br>{{ dados.responsavel.cargo }}</p>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <p class="assinatura"><b>{{ dados.responsavel.usuario.get_full_name }}</b><br>{{ dados.responsavel.cargo }}</p>
 
 {% endautoescape %}
 </body>
