@@ -70,4 +70,5 @@
 
 <h4>Contatos</h4>
 
-<p>Desenvolvedor Principal: Danilo Rodrigues - <a href="mailto:danilorodrigues@nivsoft.com.br?Subject=Beta4"> danilorodrigues@nivsoft.com.br</a></p>
+<p>Desenvolvedor Python/Django: Danilo Rodrigues - <a href="mailto:danilorodrigues@nivsoft.com.br?Subject=Beta4"> danilorodrigues@nivsoft.com.br</a></p>
+<p>Desenvolvedor HTML5/JS/CSS3: Vinícios Rodrigues - <a href="mailto:viniciosarodrigues@gmail.com?Subject=Beta4"> viniciosarodrigues@gmail.com</a></p>
