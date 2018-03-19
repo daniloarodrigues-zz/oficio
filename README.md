@@ -73,4 +73,8 @@
 <p>Desenvolvedor Python/Django: Danilo Rodrigues - <a href="mailto:danilorodrigues@nivsoft.com.br?Subject=Beta4"> danilorodrigues@nivsoft.com.br</a></p>
 <p>Desenvolvedor HTML5/JS/CSS3: Vinícios Rodrigues - <a href="mailto:viniciosarodrigues@gmail.com?Subject=Beta4"> viniciosarodrigues@gmail.com</a></p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/la7QUvXANMw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<h2>Funcionalidades</h2>
+
+Criação de Ofícios
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/la7QUvXANMw/0.jpg)](http://www.youtube.com/watch?v=la7QUvXANMw)
