@@ -75,6 +75,19 @@
 
 <h2>Funcionalidades</h2>
 
+<h4>Implementadas</h4>
+Listar Ofícios por Ano
 Criação de Ofícios
+Edição de Ofícios
+Pré-visualização de Ofícios
+Donwload do Ofício em PDF
+Deletar Ofício
+
+<h4>Próxiams atualizações</h4>
+Histórico de modificações
+Protocolo
+Envio de Ofícios para outros usuários do sistema
+
+<h2>Vídeos</h2>
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/la7QUvXANMw/0.jpg)](http://www.youtube.com/watch?v=la7QUvXANMw)
