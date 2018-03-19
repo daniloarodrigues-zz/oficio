@@ -76,17 +76,17 @@
 <h2>Funcionalidades</h2>
 
 <h4>Implementadas</h4>
-Listar Ofícios por Ano
-Criação de Ofícios
-Edição de Ofícios
-Pré-visualização de Ofícios
-Donwload do Ofício em PDF
-Deletar Ofício
+<p>Listar Ofícios por Ano</p>
+<p>Criação de Ofícios</p>
+<p>Edição de Ofícios</p>
+<p>Pré-visualização de Ofícios</p>
+<p>Donwload do Ofício em PDF</p>
+<p>Deletar Ofício</p>
 
 <h4>Próxiams atualizações</h4>
-Histórico de modificações
-Protocolo
-Envio de Ofícios para outros usuários do sistema
+<p>Histórico de modificações</p>
+<p>Protocolo</p>
+<p>Envio de Ofícios para outros usuários do sistema</p>
 
 <h2>Vídeos</h2>
 
